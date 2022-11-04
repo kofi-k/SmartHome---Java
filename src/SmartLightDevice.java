@@ -28,6 +28,11 @@ public class SmartLightDevice extends SmartHomeDevice {
         System.out.println("Smart light powered off.");
     }
 
+    @Override
+    public String getSmartDeviceStatus() {
+        return super.getSmartDeviceStatus();
+    }
+
     void increaseSmartLightBrightness() {
         smartLightBrightnessLevel++;
         if (smartLightBrightnessLevel > 10) {

@@ -17,6 +17,10 @@ public class SmartTvDevice extends SmartHomeDevice {
     protected String display = "HDMI 1";
     private final String deviceName;
 
+    @Override
+    public String getSmartDeviceStatus() {
+        return super.getSmartDeviceStatus();
+    }
 
     //declaration of an arrayList collection to contain list of channels on a smart tv
     ArrayList<String> channelList = new ArrayList<>();
@@ -29,6 +33,7 @@ public class SmartTvDevice extends SmartHomeDevice {
         super(smartHomeDeviceName);
         this.deviceName = smartHomeDeviceName;
     }
+
 
     //we might want to throw some channels into channelList collection
     protected void dstvChannels() {
